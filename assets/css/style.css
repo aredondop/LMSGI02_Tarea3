@@ -1,0 +1,32 @@
+body{
+    background: #f2f2f2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+fieldset div{
+    margin: 2px 0;
+}
+
+fieldset div .toplabel{
+    display:block;
+    width: 200px !important;
+    font-size: 14px;
+}
+
+textarea{
+    resize: none;
+}
+
+form footer{
+    margin-top: 20px;
+    text-align: right;
+}
+
+footer{
+    margin-top:20px;
+}
+
+footer small{
+    font-size: 12px;
+    color: grey;
+}

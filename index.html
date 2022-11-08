@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Formulario de Reserva</title>
+      <link rel="stylesheet" href="assets/css/style.css" />
+   </head>
+   <body>
+        <h1>Formulario de Reserva</h1>
+
+        <form method="post">
+
+            <fieldset>
+                <legend>Datos de la Reserva</legend>
+                <div>
+                    <label class="toplabel" for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Su Nombre" required maxlength="50" />
+                </div>
+                <div>
+                    <label class="toplabel" for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos" placeholder="Sus Apellidos" maxlength="200" />
+                </div>
+                <div>
+                    <label class="toplabel" for="telefono">Teléfono de Contacto</label>
+                    <input type="phone" name="telefono" placeholder="600000000" required />
+                </div>
+
+                <div>
+                    <label class="toplabel" for="email">Email</label>
+                    <input type="email" name="email" placeholder="mail@mail.es" required />
+                </div>
+                <div>
+                    <label class="toplabel" for="noches">Nº de Noches</label>
+                    <input type="number" name="noches" value="1"  min="1" max="30" required />
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Fecha de Entrada</legend>
+                <select name="dia" required>
+                    <option selected disabled>Elige un día</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+
+                <select name="mes" required>
+                    <option selected disabled>Elige un mes</option>
+                    <option>ENERO</option>
+                    <option>FEBRERO</option>
+                    <option>MARZO</option>
+                    <option>ABRIL</option>
+                    <option>MAYO</option>
+                    <option>JUNIO</option>
+                    <option>JULIO</option>
+                    <option>AGOSTO</option>
+                    <option>SEPTIEMBRE</option>
+                    <option>OCTUBRE</option>
+                    <option>NOVIEMBRE</option>
+                    <option>DICIEMBRE</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipo de Habitación</legend>
+
+                <div>
+                    <input type="radio" id="simple" name="habitacion" value="simple" />
+                    <label for="simple">Simple</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="doble" name="habitacion" value="doble" />
+                    <label for="doble">Doble</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="matrimonio" name="habitacion" value="matrimonio" />
+                    <label for="matrimonio">Matrimonio</label>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Extras</legend>
+            
+                <div>
+                    <input type="checkbox" id="desayuno" name="desayuno" />
+                    <label for="desayuno">Desayuno</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="comida" name="comida" />
+                    <label for="comida">Comida</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="cena" name="cena" />
+                    <label for="cena">Cena</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="camaSupletoria" name="camaSupletoria" />
+                    <label for="camaSupletoria">Cama Supletoria</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Observaciones</legend>
+            
+                <div>
+                    <textarea name="observaciones" rows="10" cols="50" placeholder="¿Alguna cosa más? Déjanos lo en las observaciones"></textarea>
+                </div>
+            
+               
+            </fieldset>
+
+            <footer>
+                <input type="reset" value="Limpiar" />
+                <input type="submit" value="Enviar" />
+            </footer>
+
+        </form>
+
+        <footer>
+            <small>&copy; Ángel Redondo Pliego 2022 | Hecho con ❤️ para LMSGI02</small>
+        </footer>
+   </body>
+</html>
